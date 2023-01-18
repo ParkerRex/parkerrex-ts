@@ -5,9 +5,9 @@ export const config = {
 };
 
 export default async function handler(req: NextRequest) {
-  const userResponse = await fetch('https://api.github.com/users/leerob');
+  const userResponse = await fetch('https://api.github.com/users/parkerrex');
   const userReposResponse = await fetch(
-    'https://api.github.com/users/leerob/repos?per_page=100'
+    'https://api.github.com/users/parkerrex/repos?per_page=100'
   );
 
   const user = await userResponse.json();
